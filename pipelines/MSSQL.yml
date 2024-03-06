@@ -1,0 +1,7 @@
+version: pipelines/v0.1
+name: MSSQL
+timeout: 0
+data_components:
+- tap-mssql
+- Warehouse
+- dbt
