@@ -1,0 +1,47 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-marketo",
+  "namespace": "tap_marketo",
+  "variant": "singer-io",
+  "label": "Marketo",
+  "docs": "https://www.matatika.com/data-details/tap-marketo/",
+  "repo": "https://github.com/singer-io/tap-marketo",
+  "pip_url": "git+https://github.com/singer-io/tap-marketo.git",
+  "description": "Market is a marketing automation software platform that helps businesses engage with their customers and prospects through various channels such as email, social media, and digital ads. \n\nMarket provides a range of tools and features to help businesses create and manage marketing campaigns, track customer behavior and engagement, and measure the effectiveness of their marketing efforts. With Marketo, businesses can automate their marketing processes, personalize their messaging, and deliver targeted content to their audience. The platform also offers integrations with other marketing and sales tools, such as Salesforce, to provide a seamless experience for users. Overall, Marketo helps businesses streamline their marketing efforts and drive more revenue through effective customer engagement.",
+  "logo_url": "https://app.matatika.com/assets/logos/extractors/marketo.png",
+  "capabilities": [
+    "state",
+    "discover",
+    "properties"
+  ],
+  "settings": [
+    {
+      "name": "endpoint",
+      "kind": "string",
+      "label": "Endpoint",
+      "description": "The URL that specifies the location of the Marketo API.",
+      "protected": false
+    },
+    {
+      "name": "client_id",
+      "kind": "string",
+      "label": "Client ID",
+      "description": "A unique identifier for the Marketo account that is used to authenticate API requests.",
+      "protected": false
+    },
+    {
+      "name": "client_secret",
+      "kind": "password",
+      "label": "Client Secret",
+      "description": "A secret key that is used in conjunction with the client ID to authenticate API requests.",
+      "protected": false
+    },
+    {
+      "name": "start_date",
+      "kind": "date_iso8601",
+      "label": "Start Date",
+      "description": "The date from which to retrieve data from the Marketo API.",
+      "protected": false
+    }
+  ]
+}
