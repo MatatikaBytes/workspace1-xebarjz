@@ -1,0 +1,60 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-mssql",
+  "namespace": "mssql",
+  "variant": "matatika",
+  "label": "MSSQL",
+  "docs": "https://www.matatika.com/data-details/tap-mssql/",
+  "repo": "https://github.com/Matatika/pipelinewise-tap-mssql",
+  "pip_url": "git+https://github.com/Matatika/pipelinewise-tap-mssql.git@v1.0.3",
+  "description": "MSSQL is a relational database management system developed by Microsoft.\n\nMSSQL is a powerful database management system that allows users to store, manage, and retrieve data efficiently and securely. It is designed to handle large amounts of data and can be used for a wide range of applications, from small business websites to large enterprise systems. MSSQL offers a variety of features, including support for multiple programming languages, advanced security features, and high availability options. It also includes tools for data analysis and reporting, making it a comprehensive solution for managing data. Overall, MSSQL is a reliable and scalable database management system that can help businesses of all sizes streamline their data management processes.",
+  "logo_url": "https://app.matatika.com/assets/logos/extractors/mssql.png",
+  "capabilities": [
+    "catalog",
+    "state",
+    "discover"
+  ],
+  "settings": [
+    {
+      "name": "user",
+      "kind": "string",
+      "label": "User",
+      "description": "The username used to authenticate with the MSSQL API.",
+      "protected": false
+    },
+    {
+      "name": "password",
+      "kind": "password",
+      "label": "Password",
+      "description": "The password used to authenticate with the MSSQL API.",
+      "protected": false
+    },
+    {
+      "name": "host",
+      "kind": "string",
+      "label": "Host",
+      "description": "The hostname or IP address of the server running the MSSQL API.",
+      "protected": false
+    },
+    {
+      "name": "port",
+      "kind": "integer",
+      "value": 1433,
+      "label": "Port",
+      "description": "The port number on which the MSSQL API is listening for incoming connections.",
+      "protected": false
+    },
+    {
+      "name": "database",
+      "kind": "string",
+      "label": "Database",
+      "description": "The name of the database to connect to on the MSSQL server.",
+      "protected": false
+    }
+  ],
+  "metadata": {
+    "*": {
+      "replication-method": "FULL_TABLE"
+    }
+  }
+}

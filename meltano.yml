@@ -10,6 +10,9 @@ plugins:
   - name: tap-marketo
     variant: singer-io
     pip_url: git+https://github.com/singer-io/tap-marketo.git
+  - name: tap-mssql
+    variant: matatika
+    pip_url: git+https://github.com/Matatika/pipelinewise-tap-mssql.git@v1.0.3
   loaders:
   - name: target-postgres
     variant: matatika
