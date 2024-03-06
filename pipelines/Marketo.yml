@@ -1,0 +1,7 @@
+version: pipelines/v0.1
+name: Marketo
+timeout: 0
+data_components:
+- tap-marketo
+- Warehouse
+- dbt
